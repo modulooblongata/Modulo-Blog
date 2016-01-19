@@ -2,7 +2,7 @@
 
 This is a blog built with Ruby on Rails
 
-* Uses Markup and Syntax Highlighting
+* Uses Markup (Redcarpet Gem) and Syntax Highlighting
 
 * Comment System with Disqus
 
