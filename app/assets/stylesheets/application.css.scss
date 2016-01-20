@@ -49,6 +49,10 @@ body {
   border-bottom: 1px solid #E9E9E9;
 }
 
+.notice {
+	background-color: #00cd82;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, li {
 	color: $dark;
 }
@@ -98,8 +102,10 @@ hr {
 #main_navigation {
 	padding: 2.5em 5%;
 	border-bottom: 1px solid $border;
+	background: #bfd0dc url("header.png") no-repeat left top; /* Background pattern from subtlepatterns.com */
 	.name {
 		font-weight: 700;
+		background: #fff;
 		font-size: .8em;
 		letter-spacing: 4px;
 		text-transform: uppercase;
