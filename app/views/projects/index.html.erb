@@ -5,6 +5,7 @@
 		<div class="post">
 			<p class="date"><%= project.created_at.strftime('%B %d, %Y') %></p>
 			<h2><%= link_to project.title, project %></h2>
+			<%= image_tag project.picture.url if project.picture? %>
 			<hr>
 		</div>
 	<% end %>
