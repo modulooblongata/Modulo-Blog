@@ -16,6 +16,7 @@ gem 'will_paginate', '~> 3.1'
 gem 'carrierwave', '0.10.0'
 gem 'mini_magick', '4.3.6'
 gem 'fog', '1.37.0'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 group :development, :test do
   gem 'byebug'
