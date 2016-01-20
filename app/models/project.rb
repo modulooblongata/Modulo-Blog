@@ -1,4 +1,11 @@
 class Project < ActiveRecord::Base
+	extend FriendlyId
+  friendly_id :title, use: :slugged
+
+  def should_generate_new_friendly_id?
+  	title_changed?
+	end
+
 	mount_uploader :picture, PictureUploader
 	validate  :picture_size
 
