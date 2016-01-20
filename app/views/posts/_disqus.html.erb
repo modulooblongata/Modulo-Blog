@@ -4,7 +4,7 @@
 * CONFIGURATION VARIABLES
 **/
 var disqus_config = function () {
-    this.page.url = '<%= polymorphic_url(@post) %>';
+    this.page.url = '<%= url_for([@post, {only_path: false}]) %>';
     this.page.identifier = '<%= @post.id %>';
     this.page.title = '<%= @post.title %>';
 };
