@@ -12,6 +12,29 @@
 	padding: 0 2.5%;
 }
 
+.col-contact {
+	width: 33.33333333%;
+	text-align: center;
+	float: left;
+	position: relative;
+  padding-left: 15px;
+}
+
+@media (max-width: 925px) {
+	.col-contact {
+		width: 100%;
+		float: none;
+		box-sizing: content-box;
+		text-align: center;
+		margin-left: auto;
+    margin-right: auto;
+	}
+}
+
+.fa3x {
+	font-size: 3em;
+}
+
 .homepage_content {
 	h2 {
 		font-size: 1.1rem;
@@ -20,7 +43,7 @@
 	h3 {
 		font-size: 1.35em;
 		font-weight: 400;
-		margin-bottom: .5em;
+		margin-bottom: 0.5em;
 	}
 	a {
 		text-decoration: none;
@@ -30,19 +53,28 @@
 		}
 	}
 	.date {
-		font-size: .85em;
+		font-size: 0.85em;
 		margin-bottom: 2em;
 		color: $light;
 	}
 	p {
-		margin: 0 0 .75em 0;
+		margin: 0 0 0.75em 0;
 	}
 }
 .about {
 	padding: 0 7.5% 0 0;
 	a {
 		color: $highlight;
-		font-weight: 700;
+		font-weight: 500;
 		text-decoration: none;
+	}
+	.project_button {
+		color: $white;
+		&:hover {
+			color: $white;
+		}
+	}
+	.button_wrapper {
+		margin: 2em 0 0 0;
 	}
 }

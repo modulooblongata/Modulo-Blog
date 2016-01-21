@@ -1,25 +1,42 @@
-<h1 id="page_title">Send Me a Message</h1>
+<h1 id="page_title">Contact Me</h1>
 
 <div class="skinny_wrapper wrapper_padding">
-	<%= form_for @contact do |f| %>
-		<%= f.label :name %><br>
-		<%= f.text_field :name, required: true %>
+	<div class="contact-info">
+		<p>Like what you see? I'm avalable by e-mail and Twitter, or you can send me a message below.</p>
+    <div class="col-contact">
+      <i class="fa fa-envelope-o fa3x"></i>
+      <p><a href="mailto:modulooblongata@gmail.com">modulooblongata@gmail.com</a></p>
+    </div>
+    <div class="col-contact">
+      <i class="fa fa-twitter fa3x"></i>
+      <p><a href="https://twitter.com/modulooblongata">@modulooblongata</a></p>
+    </div>
+    <div class="col-contact">
+      <i class="fa fa-linkedin fa3x social-buttons"></i>
+      <p><a href="https://www.linkedin.com/in/rnhalabi">Romina Case</a></p>
+    </div>
+  <hr>
+	</div>
+	<h3>Send me a message</h3>
+		<%= form_for @contact do |f| %>
+			<%= f.label :name %><br>
+			<%= f.text_field :name, required: true %>
 
-		<br>
+			<br>
 
-		<%= f.label :email %><br>
-		<%= f.email_field :email, required: true %>
+			<%= f.label :email %><br>
+			<%= f.email_field :email, required: true %>
 
-		<br>
+			<br>
 
-		<%= f.label :message %><br>
-		<%= f.text_area :message, as: :text %>
+			<%= f.label :message %><br>
+			<%= f.text_area :message, as: :text %>
 
-		<div class="hidden">
-			<%= f.label :nickname %><br>
-			<%= f.text_field :nickname, hint: 'leave this field blank' %>
-		</div>
+			<div class="hidden">
+				<%= f.label :nickname %><br>
+				<%= f.text_field :nickname, hint: 'leave this field blank' %>
+			</div>
 
-		<%= f.submit 'Send Message', class: "button" %>
-	<% end %>
+			<%= f.submit 'Send Message', class: "button" %>
+		<% end %>
 </div>
