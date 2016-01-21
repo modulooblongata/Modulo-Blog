@@ -1,4 +1,6 @@
 @import 'normalize';
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
 
 $dark: #424652;
 $white: #FFFFFF;
@@ -14,7 +16,11 @@ a {
 	text-decoration: none;
 }
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', 'Raleway', sans-serif;
+}
+
+p, ul, li {
+	font-family: 'Quattrocento', serif;
 }
 
 .hide {
@@ -113,11 +119,11 @@ hr {
 #main_navigation {
 	padding: 2.5em 5%;
 	border-bottom: 1px solid $border;
-	background: #bfd0dc url("header.png") no-repeat left top; /* Background pattern from subtlepatterns.com */
+	background: #bfd0dc url("header3.png") no-repeat left top; /* Background pattern from subtlepatterns.com */
 	.name {
 		font-weight: 700;
 		background: #fff;
-		font-size: .8em;
+		font-size: 0.8em;
 		letter-spacing: 4px;
 		text-transform: uppercase;
 		border: 2px solid $border;
