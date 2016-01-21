@@ -5,17 +5,22 @@
 		<div class="post">
 			<p class="date"><%= post.created_at.strftime('%B %d, %Y') %></p>
 			<h2><%= link_to post.title, post %></h2>
-			<div>
+				<div>
   			<% if post.content.length > 250 %>
     			<%= truncate(post.content, length: 250) %>
     			<%= link_to 'Read more &raquo;'.html_safe, post %>
   			<% else %>
     			<%= post.content %>
   			<% end %>
-			<div>
+				</div>
 			<hr>
+		</div>
+	<% end %>
+	<%= will_paginate @posts %>
+	<% if user_signed_in? %>
+		<div id="admin_links">
+			<%= link_to "New Post", new_post_path(@post) %>
 		</div>
 	<% end %>
 </div>
 
-<%= will_paginate @posts %>
