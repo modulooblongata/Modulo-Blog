@@ -9,7 +9,10 @@ $border: #E9E9E9;
 * {
 	box-sizing: border-box;
 }
-
+a {
+	color: $highlight;
+	text-decoration: none;
+}
 body {
 	font-family: 'Raleway', sans-serif;
 }
