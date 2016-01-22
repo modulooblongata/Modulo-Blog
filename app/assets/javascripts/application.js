@@ -35,3 +35,12 @@ $( document ).ready(function() {
     e.preventDefault();
   });
 });
+
+// Notices fade out
+$(document).ready(function() {
+  setTimeout(function() {
+      $(".notice, .alert").fadeOut("slow", function() {
+          $(this).remove();
+      })
+  }, 2000 );
+});

@@ -16,7 +16,7 @@ a {
 	text-decoration: none;
 }
 body {
-	font-family: 'Quicksand', 'Raleway', sans-serif;
+	font-family: 'Quicksand', 'Raleway', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
 p, ul, li {
@@ -67,7 +67,11 @@ p, ul, li {
 }
 
 .notice {
-	background-color: #00cd82;
+	background-color: #71e0b2;
+}
+
+.alert {
+	background-color: #f3827d;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
