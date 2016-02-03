@@ -123,7 +123,7 @@ hr {
 #main_navigation {
 	padding: 2.5em 5%;
 	border-bottom: 1px solid $border;
-	background: #bfd0dc url("header3.png") no-repeat left top; /* Background pattern from subtlepatterns.com */
+	background: #b5d0dc url("header.png") no-repeat left top; 
 	.name {
 		font-weight: 700;
 		background: #fff;
@@ -144,6 +144,14 @@ hr {
 			text-decoration: none;
 			margin: 0 1rem;
 			font-size: 1rem;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	#main_navigation {
+		nav a {
+			color: #fff;
 		}
 	}
 }

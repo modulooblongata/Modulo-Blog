@@ -1,8 +1,8 @@
 <header id="main_navigation" class="clearfix">
 	<%= link_to "Romina Case", root_path, class: "name" %>
 	<nav>
-		<%= link_to "Blog", posts_path %>
 		<%= link_to "Projects", projects_path %>
+		<%= link_to "Blog", posts_path %>
 		<%= link_to "Contact", new_contact_path %>
 		<% if user_signed_in? %>
 			<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
