@@ -28,6 +28,7 @@
 			<h3><%= link_to project.title, project %></h3>
 			<p class="date"><%= project.created_at.strftime("%b %d, %Y") %></p>
 		<% end %>
+		<%= link_to "See full portfolio", projects_path %>
 	</div>
 	<div class="col-2 homepage_content">
 		<h2>Blog</h2>
@@ -36,5 +37,6 @@
 			<h3><%= link_to post.title, post %></h3>
 			<p class="date"><%= post.created_at.strftime("%b %d, %Y") %></p>
 		<% end %>
+		<%= link_to "See full blog", posts_path %>
 	</div>
 </div>
