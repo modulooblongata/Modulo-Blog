@@ -1,18 +1,18 @@
 <h1 id="page_title">Portfolio</h1>
 
 <div id="posts_wrapper" class="skinny_wrapper">
-	<% @projects.each do |project| %>
-		<div class="post">
-			<p class="date"><%= project.created_at.strftime('%B %d, %Y') %></p>
-			<h2><%= link_to project.title, project %></h2>
-			<%= link_to(image_tag(project.picture.url), project_path(project)) if project.picture? %>
-			<hr>
-		</div>
-	<% end %>
+  <% @projects.each do |project| %>
+    <div class="post">
+      <p class="date"><%= project.created_at.strftime('%B %d, %Y') %></p>
+      <h2><%= link_to project.title, project %></h2>
+      <%= link_to(image_tag(project.picture.url), project_path(project)) if project.picture? %>
+      <hr>
+    </div>
+  <% end %>
 
-	<% if user_signed_in? %>
-		<div id="admin_links">
-			<%= link_to "New Project", new_project_path(@project) %>
-		</div>
-	<% end %>
+  <% if user_signed_in? %>
+    <div id="admin_links">
+      <%= link_to "New Project", new_project_path(@project) %>
+    </div>
+  <% end %>
 </div>
